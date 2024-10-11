@@ -1,0 +1,88 @@
+@charset "utf-8";
+/* CSS Document */
+
+#main-nav[aria-hidden="true"] {
+    display: none;
+}
+
+#main-nav[aria-hidden="false"] {
+    display: block;
+}
+
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left:0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 999;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    max-width: 500px;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    border-radius: 8px;
+    z-index: 1000;
+}
+
+.modal[aria-hidden = "false"],
+.overlay[aria-hidden="false"] {
+    display: block;
+}
+
+fieldset, #submission-result {
+    margin-top: 30px;
+}
+
+label {
+    font-weight: bold;
+}
+
+legend {
+
+    margin-top: 20px;
+}
+
+#submit-button {
+    margin-top:20px
+}
+
+header {
+    border: 1px solid black;
+    padding: 25px;
+}
+
+main {
+    border: 1px solid black;
+    padding: 25px;
+    margin-top: 20px;
+}
+
+footer {
+    border: 1px solid black;
+    padding: 25px;
+    margin-top: 20px;
+}
+
+.margin-bottom-20 {
+    margin-bottom: 20px;
+}
+
+nav#main-nav ul li {
+    display: inline;
+    padding-right: 20px;
+}
+
+textarea#multiline {
+    vertical-align: middle;
+}

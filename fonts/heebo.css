@@ -1,0 +1,43 @@
+/*Heebo BMO Webfont package generated on June 2, 2017 - Ryan Urquhart - UI Dev Lead */
+
+@font-face {
+    font-family: 'heebo-bold';
+    src: url('heebo-bold.woff2') format('woff2'),
+		 url('Heebo-Bold.ttf')  format('truetype'),
+         url('heebo-bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'heebo-light';
+    src: url('heebo-light.woff2') format('woff2'),
+		url('Heebo-Light.ttf')  format('truetype'),
+         url('heebo-light.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'heebo-medium';
+    src: url('heebo-medium.woff2') format('woff2'),
+		 url('Heebo-Medium.ttf')  format('truetype'),
+         url('heebo-medium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'heebo';
+    src: url('heebo-regular.woff2') format('woff2'),
+		 url('Heebo-Regular.ttf')  format('truetype'),
+         url('heebo-regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'heebo-thin';
+    src: url('heebo-thin.woff2') format('woff2'),
+		 url('Heebo-Thin.ttf')  format('truetype'),
+         url('heebo-thin.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}

@@ -1,0 +1,31 @@
+article,aside,details,figcaption,figure,footer,header,hgroup,hr,menu,nav,section{display:block}a,hr{padding:0}abbr,address,article,aside,audio,b,blockquote,body,canvas,caption,cite,code,dd,del,details,dfn,div,dl,dt,em,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,p,pre,q,samp,section,small,span,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,ul,var,video{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:0 0}ins,mark{background-color:#ff9;color:#000}body{line-height:1}nav ul{list-style:none}blockquote,q{quotes:none}blockquote:after,blockquote:before,q:after,q:before{content:'';content:none}a{margin:0;font-size:100%;vertical-align:baseline;background:0 0}ins{text-decoration:none}mark{font-style:italic;font-weight:700}del{text-decoration:line-through}abbr[title],dfn[title]{border-bottom:1px dotted;cursor:help}table{border-collapse:collapse;border-spacing:0}hr{height:1px;border:0;border-top:1px solid #ccc;margin:1em 0}input,select{vertical-align:middle}a,abbr,address,article,blockquote,caption,h1,h2,h3,h4,h5,h6,li,p,table,td,tr,strong,bold{color:$bmo-slate;font-weight:400;font-size:1.8rem;line-height:2.4rem;letter-spacing:0;padding-top:0;padding-bottom:0;text-decoration:none}html{-moz-osx-font-smoothing:grayscale;-webkit-font-smoothing:antialiased;font-smoothing:antialiased;font-weight:300}
+
+html {
+	font-size: 62.5%;
+	color: #000;
+	letter-spacing: 0px;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	font-family: 'heebo';
+	background-image: url(../../img/bgs/site-bg.png);
+	overflow-x: hidden!important;
+	height: 100%;
+}
+body {
+	font-size: 1.8rem;
+}
+.test-container {
+	max-width: 1280px;
+	margin: auto;
+}
+.test-heading {
+	text-align: left; 
+	font-size: 2.4rem; 
+	margin: 32px 0;
+}
+.test-heading2 {
+	text-align: left; 
+	font-size: 2.0rem; 
+	margin: 16px 0;
+}

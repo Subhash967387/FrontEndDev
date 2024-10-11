@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+		<meta charset="utf-8">
+		<title>BMO - UI AODA Test</title>
+		<meta name="viewport" content="initial-scale=1, maximum-scale=1">
+		<link rel="stylesheet" href="css/reset.css" />
+		<link rel="stylesheet" href="css/your-styles-here.css" />
+		<link rel="stylesheet" href="fonts/heebo.css" />
+	</head>
+	<body>
+		<div class="test-container">
+			<h1 class="test-heading">BMO Accessiblity Test for UI Devs</h1>
+			<header aria-label="Main Navigation">
+				<h2 class="test-heading">Create an accessible navigation</h2>
+				<button aria-expanded="false" aria-controls="main-nav" class="margin-bottom-20">Show/Hide Nav</button>
+				<nav id="main-nav" aria-hidden="false">
+					<ul>
+					<li><a href="#" aria-label="Go to Home">Home</li>
+					<li><a href="#" aria-label="Go to About">About</a></li>
+					<li><a href="#" aria-label="Go to Banking">Banking</a></li>
+					<li><a href="#" aria-label="Go to Hockey">Hockey</a></li>
+					<li><a href="#" aria-label="Go to Good Food">Good Food</a></li>
+					<li><a href="#" aria-label="Go to UI Development">UI Development</a></li>
+					<li><a href="#" aria-label="Go to Contact">Contact</a></li>
+				</ul>
+				</nav>
+			</header>	
+			<main class="main-content" id="main-content">
+				<h2 class="test-heading">Create an accessible form</h2>
+				<form aria-labelledby="main-content" id="accessible-form">
+					<fieldset>
+					<legend class="margin-bottom-20">Text Inputs</legend>
+				
+				<label for "text-input">Text Input:</label>
+				<input id="text-input" type="text" placeholder="Enter text">
+
+				<label for ="number-input">Number Input:</label>
+				<input id="number-input" type="number" placeholder="Enter number">
+
+				<label for="email-input">Email Input:</label>
+				<input id="email-input" type="email" placeholder="Enter email">
+				</fieldset>
+
+				<fieldset>
+				<legend>Radio Inputs<legend>
+					<p class="margin-bottom-20">Select an option:</p>
+					<div role="group" aria-labelledby="radio-group">
+						<input type="radio" id="radio1" name="radio-group" value="Option 1">
+						<label for="radio1">Option 1</label>
+						<input type="radio" id="radio2" name="radio-group" value="Option 2">
+						<label for="radio2">Option 2</label>
+						<input type="radio" id="radio3" name="radio-group" value="Option 3">
+						<label for="radio3">Option 3</label>
+					</div>
+				</fieldset>
+
+				<fieldset>
+					<legend class="margin-bottom-20">Multiline Input</legend>
+					<label for="multiline">Comments:</label>
+					<textarea id="multiline" placeholder="Enter your comments"></textarea>
+				</fieldset>
+
+				<button type="submit" id="submit-button">Submit</button>
+				</form>
+
+				<section id="submission-result" style="display:none">
+					<h3>Submitted Data</h3>
+					<p id="display-text"></p>
+					<p id="display-number"></p>
+					<p id="display-email"></p>
+					<p id="display-radio"></p>
+					<p id="display-comments"></p>
+				</section>
+				
+				<section class="modal-section">
+					<h2 class="test-heading">Accessible Modal</h2>
+					<button class="modal-trigger" aria-controls="modal" aria-expanded="false">Modal Trigger</button> 
+					<div class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-tile" tabindex="-1" id="modal">
+						<div class="modal-header">
+							<h1 id="modal-title">This is a modal title</h1>
+							<button class="close-modal" aria-label="Close modal">Close</button>
+						</div>
+						<div class="modal-body">
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
+						</div>
+					</div>
+					<div class="overlay"></div>
+				</section>
+				</main>
+
+			<footer>
+				<h2 class="test-heading">footer</h2>
+			</footer>
+		</div>	
+		<script src="assets/js/jquery-1.11.3.min.js"></script>
+		<script src="js/your-js-here.js"></script>
+	</body>	
+</html>
